@@ -1,4 +1,4 @@
-# proj_instalacao_cli
+# projeto_cli
 
 ## Project setup
 ```
