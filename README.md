@@ -13,5 +13,6 @@ Aplicação de conhecimentos adquiridos ao longo do [curso de Vue JS](https://ww
 - Criação e Execução do projeto usando Vue CLI  
   ```
   vue create nomeprojeto
-  npm run server
+  cd nomeprojeto
+  npm run serve
   ```
