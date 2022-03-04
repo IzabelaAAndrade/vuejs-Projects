@@ -10,7 +10,28 @@ Aplicação de conhecimentos adquiridos ao longo do [curso de Vue JS](https://ww
 
 # Comandos Importantes 
 
-- Criação e Execução do projeto usando Vue CLI  
+## Instalação do Node JS no Linux usando NVM
+- Para a instalação do gerenciador NVM
+  ```
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
+  
+  ```
+- Para verificar as versões de nodejs disponíveis
+  ```
+  nvm list-remote
+  ```
+- Para instalar e aplicar a versão desejada
+  ```
+  nvm install v16.14.0
+  nvm use v16.14.0
+  ```
+- Para verificar a versão do node e do npm
+  ```
+  node -v
+  npm -v
+  ```
+
+## Criação e Execução do projeto usando Vue CLI  
   ```
   vue create nomeprojeto
   cd nomeprojeto
