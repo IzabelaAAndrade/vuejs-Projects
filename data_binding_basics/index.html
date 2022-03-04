@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Binding Basics</title>
+    <!-- Importação do Vue através de CDN -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="appbinding.js" defer></script>
+</head>
+
+<body>
+    <h3> Mini Form Tipo Sanguíneo</h3>
+    <div id="app">
+        <form id="app-form">
+            <label>Nome do Paciente: <input type="text" v-model="input_nome"/></label>
+            <label for="tipos">Tipo sanguíneo:</label>
+            <select v-model="tipos" id="tps">
+                <option value="Não Informado" selected>Selecionar...</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+            </select>
+            <h4> Fator RH: </h4>
+            <label>
+                <input v-model="rh" type="radio" value="Positivo">+
+            </label>
+            <label>
+                <input v-model="rh" type="radio" value="Negativo">-
+            </label>
+            <input type="submit" v-on:click="submitForm" />
+        </form>
+        <h3>Dados Recebidos (Evento): </h3>
+        <p>Nome do Paciente: {{ nomePaciente }} </p>
+        <p>Tipo Sanguíneo: {{ tipoSanguineo }} </p>
+        <p>Fator Rh: {{ fatorRh }} </p>
+
+        <h3>Dados Recebidos (Data Binding): </h3>
+        <p>Nome do Paciente: {{ input_nome }} </p>
+        <p>Tipo Sanguíneo: {{ tipos }} </p>
+        <p>Fator Rh: {{ rh }} </p>
+    </div>
+</body>
+
+</html>
